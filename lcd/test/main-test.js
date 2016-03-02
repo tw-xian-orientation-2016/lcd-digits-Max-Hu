@@ -78,8 +78,9 @@ describe('Task 3: print number with char', function() {
   });
 
   it('should get a split array', function () {
-    var result = printCharNumbers(charNumbers);
-    expect(result).toEqual(output);
+    spyOn(console, 'log');
+    printCharNumbers(charNumbers);
+    expect(console.log).toHaveBeenCalledWith(output);
   });
 
 });
