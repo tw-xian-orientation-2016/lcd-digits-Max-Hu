@@ -40,5 +40,24 @@ describe('Task 1: split number', function() {
     expect(result).toEqual(output);
   });
 
+});
+
+describe('Task 2: get char list from dictionary', function() {
+
+  var compare;
+  var numberarray;
+  var dictionary;
+
+  beforeEach(function () {
+
+    dictionary = loadDictionary();
+    numberarray = ['9','1','0'];
+    compare = [['._.','|_|','..|'],['...','..|','..|'],['._.','|.|','|_|']]
+  });
+
+  it('should get a split array', function () {
+    var result = getElement(numberarray,dictionary);
+    expect(result).toEqual(compare);
+  });
 
 });
