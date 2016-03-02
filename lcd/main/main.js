@@ -22,5 +22,11 @@ function printCharNumbers(charNumbers){
       }
     });
   }
-  return outputChar.substr(0,outputChar.length-1);
+  console.log(outputChar.substr(0,outputChar.length-1));
+}
+
+function printLDCStr(input){
+  var numberArr = splitNumber(input);
+  var charArr = getElement(numberArr,loadDictionary());
+  printCharNumbers(charArr);
 }
