@@ -16,3 +16,11 @@ Example: 910
 |_| ..| |.|
 ..| ..| |_|
 ```
+
+Task 1: 5 min
+
+Task 2: 5 min
+
+Task 3: 10 min
+
+Merge Task: 7 min
