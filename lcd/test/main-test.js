@@ -6,11 +6,11 @@ describe('Main Task: print lcd', function() {
 
   beforeEach(function () {
 
-    input = '910';
+    input = '110';
 
     output =
-      '._. ... ._.\n' +
-      '|_| ..| |.|\n' +
+      '... ... ._.\n' +
+      '..| ..| |.|\n' +
       '..| ..| |_|';
 
   });
