@@ -8,7 +8,8 @@ describe('Main Task: print lcd', function() {
 
     input = '910';
 
-    output = '._. ... ._.\n' +
+    output =
+      '._. ... ._.\n' +
       '|_| ..| |.|\n' +
       '..| ..| |_|';
 
@@ -58,6 +59,27 @@ describe('Task 2: get char list from dictionary', function() {
   it('should get a split array', function () {
     var result = getElement(numberarray,dictionary);
     expect(result).toEqual(compare);
+  });
+
+});
+
+describe('Task 3: print number with char', function() {
+
+  var output;
+  var charNumbers;
+
+  beforeEach(function () {
+
+    output =
+      '._. ... ._.\n' +
+      '|_| ..| |.|\n' +
+      '..| ..| |_|';
+    charNumbers = [['._.','|_|','..|'],['...','..|','..|'],['._.','|.|','|_|']]
+  });
+
+  it('should get a split array', function () {
+    var result = printCharNumbers(charNumbers);
+    expect(result).toEqual(output);
   });
 
 });
